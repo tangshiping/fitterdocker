@@ -3,6 +3,8 @@ machine:
     - docker
 
 dependencies:
+  pre:
+    - pip install -U docker-compose
   override:
     - pip install -r requirements.txt
 
