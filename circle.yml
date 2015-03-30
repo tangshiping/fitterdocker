@@ -12,3 +12,9 @@ test:
   override:
     - docker-compose run -d --no-deps web
     - python web/tests.py
+
+deployment:
+  hub:
+    branch: master
+    commands:
+      - $DEPLOY
